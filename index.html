@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Matheus</title>
+
+  <!-- Font Awesome e Simple Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v6/font/simple-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+  <!-- Barra de Navegação -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#sobre">Sobre Mim</a></li>
+      <li><a href="#tecnologias">Tecnologias</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="./img/fotomatheus.png" alt="Foto de Matheus" class="profile-pic" />
+      <h1 class="rotate-in">Olá, eu sou <span class="highlight">Matheus</span></h1>
+      <h1 class="rotate-in">Desenvolvedor <span class="highlight">Back-End</span></h1>
+      <h2 class="typing">Criando soluções reais com código.</h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/theusssantos__/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/matheus-henrique-370520286/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/5581991106597" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:matheushdev1@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Mim Section -->
+  <section id="sobre" class="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou um desenvolvedor back-end apaixonado por resolver problemas reais através de tecnologia. Trabalho com C#, .NET, ASP.NET Core, SQL Server, MySQL e Docker. Também tenho experiência em front-end com HTML, CSS, JavaScript e React.</p>
+  </section>
+
+  <!-- Tecnologias Section -->
+  <section id="tecnologias" class="tecnologias">
+    <h2>Tecnologias</h2>
+    <div class="tech-grid">
+      <!-- Back-End -->
+      <div class="tech-item" data-name="C#">
+        <i class="si si-csharp"></i>
+        <span>C#</span>
+      </div>
+      <div class="tech-item" data-name=".NET">
+        <i class="si si-dotnet"></i>
+        <span>.NET</span>
+      </div>
+      <div class="tech-item" data-name="ASP.NET">
+        <i class="si si-dotnet"></i>
+        <span>ASP.NET</span>
+      </div>
+      <div class="tech-item" data-name="Docker">
+        <i class="fab fa-docker"></i>
+        <span>Docker</span>
+      </div>
+      <div class="tech-item" data-name="SQL Server">
+        <i class="si si-microsoftsqlserver"></i>
+        <span>SQL Server</span>
+      </div>
+      <div class="tech-item" data-name="MySQL">
+        <i class="si si-mysql"></i>
+        <span>MySQL</span>
+      </div>
+
+      <!-- Front-End -->
+      <div class="tech-item" data-name="HTML">
+        <i class="fab fa-html5"></i>
+        <span>HTML</span>
+      </div>
+      <div class="tech-item" data-name="CSS">
+        <i class="fab fa-css3-alt"></i>
+        <span>CSS</span>
+      </div>
+      <div class="tech-item" data-name="JavaScript">
+        <i class="fab fa-js-square"></i>
+        <span>JavaScript</span>
+      </div>
+      <div class="tech-item" data-name="React">
+        <i class="fab fa-react"></i>
+        <span>React</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos Section -->
+<section id="projetos" class="projetos">
+    <h2>Projetos</h2>
+    <div class="projetos-grid">
+      <div class="projeto-card right hidden">
+        <img src="./img/fotomatheus.png" alt="RotinaFlex">
+        <div class="projeto-info">
+          <h3>RotinaFlex</h3>
+          <p>App de rotina inteligente para TDAH e ansiedade.</p>
+          <div class="tags">
+            <i class="fab fa-react"></i>
+            <i class="si si-dotnet"></i>
+            <i class="si si-microsoftsqlserver"></i>
+          </div>
+        </div>
+      </div>
+      <div class="projeto-card left hidden">
+        <img src="./img/fotomatheus.png" alt="Gestão de Tarefas">
+        <div class="projeto-info">
+          <h3>Gestão de Tarefas</h3>
+          <p>Sistema de tarefas com validação e MediatR.</p>
+          <div class="tags">
+            <i class="si si-csharp"></i>
+            <i class="fas fa-cogs"></i>
+            <i class="fab fa-docker"></i>
+          </div>
+        </div>
+      </div>
+      <div class="projeto-card right hidden">
+        <img src="./img/fotomatheus.png" alt="Finance App">
+        <div class="projeto-info">
+          <h3>Finance App</h3>
+          <p>Aplicativo de finanças com gráficos e dashboard.</p>
+          <div class="tags">
+            <i class="fas fa-chart-line"></i>
+            <i class="si si-dotnet"></i>
+            <i class="fas fa-coins"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contato Section -->
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu email" required>
+      <textarea placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Matheus. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

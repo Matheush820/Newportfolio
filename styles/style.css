@@ -1,0 +1,341 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a;
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+/* Barra de navegação */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1e293b;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+}
+
+nav ul li a {
+    color: #f8fafc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+    color: #fff;
+    padding: 20px;
+}
+
+.hero-content {
+    animation: fadeInContent 2s ease-out;
+}
+
+@keyframes fadeInContent {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-pic {
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+.typing {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #1DA1F2; /* Cor para o efeito hover (pode ser alterada conforme sua paleta) */
+}
+
+.social-icons a i {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #444;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover i {
+    background-color: #1DA1F2; /* Cor de fundo ao passar o mouse (pode ser alterada) */
+}
+
+/* Sobre Mim */
+.sobre {
+    padding: 80px 20px;
+    background-color: #1e293b;
+    text-align: center;
+}
+
+.sobre h2 {
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.sobre p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* Tecnologias Section */
+.tecnologias {
+    padding: 80px 20px;
+    background-color: #0f172a;
+    text-align: center;
+}
+
+.tecnologias h2 {
+    margin-bottom: 40px;
+    color: #38bdf8;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Estilo das divs de tecnologia */
+.tech-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.tech-item i {
+    font-size: 40px;
+    color: #f1f5f9;
+}
+
+.tech-item span {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    color: #f1f5f9;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: scale(1.1);
+}
+
+.tech-item:hover span {
+    opacity: 1;
+}
+
+.tech-item:hover i {
+    color: #38bdf8; /* Muda a cor do ícone no hover */
+}
+
+/* Projetos */
+.projetos {
+    padding: 100px 30px;
+    background-color: #0f172a;
+    color: #f1f5f9;
+    text-align: center;
+}
+
+.projetos h2 {
+    margin-bottom: 40px;
+    color: #38bdf8;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cria um grid responsivo */
+    gap: 40px;
+    justify-items: center;
+  }
+  
+
+.projeto-card {
+    background-color: #1e293b;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    transition: transform 0.4s;
+}
+/* Estilos para os elementos com a classe 'hidden' */
+.projeto-card.hidden {
+    opacity: 0;
+    transform: translateY(20px); /* Ajuste conforme necessário */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  /* Estilos para os elementos quando se tornam visíveis (class 'show') */
+  .projeto-card.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+.projeto-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.projeto-card:hover {
+    transform: scale(1.02);
+}
+
+.projeto-card img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.projeto-info {
+    text-align: left;
+}
+
+.projeto-info h3 {
+    color: #38bdf8;
+}
+
+/* Animação de entrada via scroll */
+/* Estilos para os elementos com a classe 'hidden' */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px); /* Pode ajustar conforme necessário */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  /* Estilos para os elementos quando se tornam visíveis (classe 'show') */
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+.tag {
+    background-color: #334155;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: #f1f5f9;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Contato */
+.contato {
+    padding: 80px 20px;
+    background-color: #1e293b;
+    color: #f1f5f9;
+    text-align: center;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.contato input,
+.contato textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
+
+.contato button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato button:hover {
+    background-color: #0ea5e9;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #0f172a;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
