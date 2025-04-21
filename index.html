@@ -15,147 +15,214 @@
 </head>
 <body>
 
-  <!-- Barra de Navegação -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#sobre">Sobre Mim</a></li>
-      <li><a href="#tecnologias">Tecnologias</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
+  <!-- Background fixo no fundo -->
+  <div class="background-fixo"></div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <img src="./img/fotomatheus.png" alt="Foto de Matheus" class="profile-pic" />
-      <h1 class="rotate-in">Olá, eu sou <span class="highlight">Matheus</span></h1>
-      <h1 class="rotate-in">Desenvolvedor <span class="highlight">Back-End</span></h1>
-      <h2 class="typing">Criando soluções reais com código.</h2>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/theusssantos__/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/matheus-henrique-370520286/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://wa.me/5581991106597" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="mailto:matheushdev1@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
-    </div>
-  </section>
+  <!-- Todo o conteúdo do site -->
+  <div class="conteudo-wrapper">
 
-  <!-- Sobre Mim Section -->
-  <section id="sobre" class="sobre">
-    <h2>Sobre Mim</h2>
-    <p>Sou um desenvolvedor back-end apaixonado por resolver problemas reais através de tecnologia. Trabalho com C#, .NET, ASP.NET Core, SQL Server, MySQL e Docker. Também tenho experiência em front-end com HTML, CSS, JavaScript e React.</p>
-  </section>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#sobre" class="nav-link"><i class="fas fa-user"></i> Sobre</a></li>
+        <li><a href="#projetos" class="nav-link"><i class="fas fa-laptop-code"></i> Projetos</a></li>
+      </ul>
+    </nav>
 
-  <!-- Tecnologias Section -->
-  <section id="tecnologias" class="tecnologias">
-    <h2>Tecnologias</h2>
-    <div class="tech-grid">
-      <!-- Back-End -->
-      <div class="tech-item" data-name="C#">
-        <i class="si si-csharp"></i>
-        <span>C#</span>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="fade-in">Bem-vindo ao meu portfólio.</h1>
+        <h2 class="fade-in">Desenvolvedor <span class="highlight">Back-End</span></h2>
+        <p class="fade-in phrase">"A melhor maneira de prever o futuro é criá-lo com código."</p>
+        <a href="https://github.com/Matheush820" target="_blank" class="btn-github fade-in">
+          <i class="fab fa-github"></i> Ver Projetos
+        </a>
       </div>
-      <div class="tech-item" data-name=".NET">
-        <i class="si si-dotnet"></i>
-        <span>.NET</span>
+      <div class="hero-image-wrapper">
+        <div class="circle outermost"></div>
+        <div class="circle outer"></div>
+        <div class="circle inner"></div>
+        <img src="./img/fotomatheus.png" alt="Foto de Matheus" class="profile-pic" />
       </div>
-      <div class="tech-item" data-name="ASP.NET">
-        <i class="si si-dotnet"></i>
-        <span>ASP.NET</span>
-      </div>
-      <div class="tech-item" data-name="Docker">
-        <i class="fab fa-docker"></i>
-        <span>Docker</span>
-      </div>
-      <div class="tech-item" data-name="SQL Server">
-        <i class="si si-microsoftsqlserver"></i>
-        <span>SQL Server</span>
-      </div>
-      <div class="tech-item" data-name="MySQL">
-        <i class="si si-mysql"></i>
-        <span>MySQL</span>
-      </div>
+    </section>
 
-      <!-- Front-End -->
-      <div class="tech-item" data-name="HTML">
-        <i class="fab fa-html5"></i>
-        <span>HTML</span>
+    <!-- Sobre Mim Section -->
+    <section id="sobre" class="sobre">
+      <h2>Quem Sou Eu?</h2>
+      <div class="sobre-container">
+        <div class="sobre-texto">
+          <p>
+            Olá! Sou <strong>Matheus Henrique</strong>, um desenvolvedor back-end apaixonado por transformar ideias em soluções reais. Tenho experiência sólida com <span class="tech">C#</span>, <span class="tech">.NET</span>, <span class="tech">ASP.NET Core</span>, <span class="tech">SQL Server</span>, <span class="tech">MySQL</span> e <span class="tech">Docker</span>. <br><br>
+            Também me aventuro no front-end com <span class="tech">HTML</span>, <span class="tech">CSS</span>, <span class="tech">JavaScript</span> e <span class="tech">React</span>, buscando sempre entregar experiências completas e funcionais. <br><br>
+            Curioso, criativo e focado em evolução contínua, estou sempre em busca de novos desafios que me tirem da zona de conforto e me façam crescer como profissional e pessoa.
+          </p>
+        </div>
       </div>
-      <div class="tech-item" data-name="CSS">
-        <i class="fab fa-css3-alt"></i>
-        <span>CSS</span>
-      </div>
-      <div class="tech-item" data-name="JavaScript">
-        <i class="fab fa-js-square"></i>
-        <span>JavaScript</span>
-      </div>
-      <div class="tech-item" data-name="React">
-        <i class="fab fa-react"></i>
-        <span>React</span>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projetos Section -->
-<section id="projetos" class="projetos">
-    <h2>Projetos</h2>
-    <div class="projetos-grid">
-      <div class="projeto-card right hidden">
-        <img src="./img/fotomatheus.png" alt="RotinaFlex">
-        <div class="projeto-info">
-          <h3>RotinaFlex</h3>
-          <p>App de rotina inteligente para TDAH e ansiedade.</p>
-          <div class="tags">
-            <i class="fab fa-react"></i>
-            <i class="si si-dotnet"></i>
-            <i class="si si-microsoftsqlserver"></i>
+    <!-- Tecnologias Section -->
+    <section id="tecnologias" class="tecnologias">
+      <h2>Tecnologias</h2>
+      <div class="tech-grid">
+        <!-- Back-End -->
+        <div class="tech-item" data-name="C#">
+          <i class="si si-csharp"></i>
+          <span>C#</span>
+        </div>
+        <div class="tech-item" data-name=".NET">
+          <i class="si si-dotnet"></i>
+          <span>.NET</span>
+        </div>
+        <div class="tech-item" data-name="ASP.NET">
+          <i class="si si-dotnet"></i>
+          <span>ASP.NET</span>
+        </div>
+        <div class="tech-item" data-name="Docker">
+          <i class="fab fa-docker"></i>
+          <span>Docker</span>
+        </div>
+        <div class="tech-item" data-name="SQL Server">
+          <i class="si si-microsoftsqlserver"></i>
+          <span>SQL Server</span>
+        </div>
+        <div class="tech-item" data-name="MySQL">
+          <i class="si si-mysql"></i>
+          <span>MySQL</span>
+        </div>
+
+        <!-- Front-End -->
+        <div class="tech-item" data-name="HTML">
+          <i class="fab fa-html5"></i>
+          <span>HTML</span>
+        </div>
+        <div class="tech-item" data-name="CSS">
+          <i class="fab fa-css3-alt"></i>
+          <span>CSS</span>
+        </div>
+        <div class="tech-item" data-name="JavaScript">
+          <i class="fab fa-js-square"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="tech-item" data-name="React">
+          <i class="fab fa-react"></i>
+          <span>React</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos Section -->
+    <section id="projetos" class="projetos">
+      <h2>Projetos</h2>
+      <div class="projetos-grid">
+        <!-- Projeto 1 -->
+        <div class="projeto-card hidden">
+          <img src="./img/rotinaflexapp.png" alt="RotinaFlex">
+          <div class="projeto-info">
+            <h3>RotinaFlex</h3>
+            <p>Aplicativo de rotina inteligente para pessoas com TDAH e ansiedade. Desenvolvido com C#, .NET, ASP.NET Core, SQL Server, React e JavaScript.</p>
+            <div class="tags">
+              <span class="tag">C#</span>
+              <span class="tag">.NET</span>
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">React</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <a href="https://github.com/Matheush820/RotinaFlex" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="projeto-card hidden">
+          <img src="./img/alunosapp.png" alt="App de Usuários">
+          <div class="projeto-info">
+            <h3>App de Cadastro de alunos</h3>
+            <p>Aplicação fullstack com cadastro de usuários, autenticação com JWT Token. Tecnologias: React, C#, ASP.NET Core, MySQL e JWT.</p>
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag">C#</span>
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">JWT</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <a href="https://github.com/Matheush820/alunoreactdotnet" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="projeto-card hidden">
+          <img src="./img/orçanapp.png" alt="Orçan">
+          <div class="projeto-info">
+            <h3>Orçan</h3>
+            <p>Aplicativo de finanças com dashboard, gráfico e autenticação com Identity. Desenvolvido com Blazor, C#, .NET, ASP.NET, SQL Server e Docker.</p>
+            <div class="tags">
+              <span class="tag">Blazor</span>
+              <span class="tag">C#</span>
+              <span class="tag">.NET</span>
+              <span class="tag">ASP.NET</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Identity</span>
+            </div>
+            <a href="https://github.com/Matheush820/Orcan" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub</a>
           </div>
         </div>
       </div>
-      <div class="projeto-card left hidden">
-        <img src="./img/fotomatheus.png" alt="Gestão de Tarefas">
-        <div class="projeto-info">
-          <h3>Gestão de Tarefas</h3>
-          <p>Sistema de tarefas com validação e MediatR.</p>
-          <div class="tags">
-            <i class="si si-csharp"></i>
-            <i class="fas fa-cogs"></i>
-            <i class="fab fa-docker"></i>
-          </div>
-        </div>
+    </section> 
+
+    <!-- FAQ -->
+    <section id="faq">
+      <h1>Perguntas Frequentes</h1>
+    
+      <div class="faq-item">
+        <h2>Onde posso ver meus projetos?</h2>
+        <p>Todos os meus projetos estão disponíveis na seção de portfólio. Acesse as páginas do meu GitHub e LinkedIn para mais detalhes!</p>
+        <a href="https://github.com/Matheush820" target="_blank" class="github-link">
+          <i class="fab fa-github"></i>
+          Acesse meu GitHub
+        </a>
       </div>
-      <div class="projeto-card right hidden">
-        <img src="./img/fotomatheus.png" alt="Finance App">
-        <div class="projeto-info">
-          <h3>Finance App</h3>
-          <p>Aplicativo de finanças com gráficos e dashboard.</p>
-          <div class="tags">
-            <i class="fas fa-chart-line"></i>
-            <i class="si si-dotnet"></i>
-            <i class="fas fa-coins"></i>
-          </div>
-        </div>
+    
+      <div class="faq-item">
+        <h2>Você está disponível para novas oportunidades?</h2>
+        <p>Sim! Estou sempre aberto a novos desafios e oportunidades, especialmente voltadas ao desenvolvimento back-end com .NET e C#.</p>
       </div>
+    
+      <div class="faq-item">
+        <h2>Você trabalha com freelas ou projetos pessoais?</h2>
+        <p>Sim! Além de projetos autorais, também realizo freelas e colaborações, desde que estejam alinhados com minhas tecnologias e valores.</p>
+      </div>
+    
+      <div class="faq-item">
+        <h2>Quais são suas principais tecnologias?</h2>
+        <p>Trabalho principalmente com C#, .NET, ASP.NET Core, SQL Server e Docker. No front, utilizo React, HTML, CSS e JavaScript.</p>
+      </div>
+    
+      <div class="faq-item">
+        <h2>Como posso entrar em contato com você?</h2>
+        <p>Você pode me chamar pelo <a href="https://wa.me/5581991106597" target="_blank">WhatsApp</a>, me enviar um <a href="mailto:matheushdev1@gmail.com">e-mail</a> ou falar comigo pelo <a href="https://www.linkedin.com/in/matheus-henrique-370520286/" target="_blank">LinkedIn</a>.</p>
+      </div>
+    </section>
+    
+
+    <!-- Ícones sociais -->
+    <div class="social-icons">
+      <a href="https://www.instagram.com/theusssantos__/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/matheus-henrique-370520286/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://wa.me/5581991106597" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:matheushdev1@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
     </div>
-  </section>
-  
 
-  <!-- Contato Section -->
-  <section id="contato" class="contato">
-    <h2>Contato</h2>
-    <form>
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu email" required>
-      <textarea placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+    <!-- Rodapé -->
+    <footer>
+      <p>&copy; 2025 Matheus. Todos os direitos reservados.</p>
+    </footer>
 
-  <footer>
-    <p>&copy; 2025 Matheus. Todos os direitos reservados.</p>
-  </footer>
+  </div> <!-- fim do conteudo-wrapper -->
 
   <script src="./js/script.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </body>
 </html>
